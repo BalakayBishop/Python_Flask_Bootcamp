@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Add an owner!</h1>
+			<p class="lead">Add the owner of a puppy by entering owner's name and the puppy's ID number</p>
+			<form method="post">
+				{{ form.hidden_tag() }}
+				{{ form.name.label }} {{ form.name() }}
+					<br><br>
+				<label for="puppy_select">Puppy</label>
+				<select id="puppy_select" name="puppy_id">
+					{% for i in all_puppies %}
+						<option>{{ i.id }}</option>
+					{% endfor %}
+				</select>
+				<br><br>
+				{{ form.submit() }}
+			</form>
+		</div>
+	</div>
+{% endblock %}
