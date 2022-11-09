@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>HTML Basics</title>
+   </head>
+   
+   <body>
+      ADD SOME TEXT
+      <h1>Heading One!</h1>
+      <h2>Heading Two!</h2>
+      <h3>Heading Three!</h3>
+      <h4>Heading Four!</h4>
+      <h5>Heading Five!</h5>
+      <h6>Heading Six!</h6>
+      
+      <p>lorem ipsum</p>
+      
+      <p>New Semantics: <strong>strong!</strong> and <em>emphasis!</em></p>
+      
+      <h3>Lists</h3>
+      <ul>
+         <li>Item One</li>
+         <li>Item Two</li>
+         <li>Item Three</li>
+      </ul>
+      
+      <ol>
+         <li>Item One</li>
+         <li>Item Two</li>
+         <li>Item Three</li>
+      </ol>
+      
+      <h3>Nested Lists</h3>
+      <ol>
+         <li>Item One</li>
+         <li>Item Two</li>
+         <ul>
+            <li>I am Nested</li>
+            <li>second nested item</li>
+            <ol>
+               <li>Woah, very nested!</li>
+            </ol>
+         </ul>
+      </ol>
+      
+      
+      <div>
+         <h2>This is in a DIV</h2>
+         <p>some stuff in a DIV</p>
+      </div>
+      
+      <p>Here is <span>some text</span>. Woohoo!</p>
+      
+      <h2>Attributes</h2>
+      <h3>Basic HTML</h3>
+      <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="picture of a Golden Retriever">
+      
+      <h3>Hyperlinks</h3>
+      <a href="https://www.google.com">MY LINK HERE</a>
+      <a href="#">THIS WILL GO TO ANOTHER PAGE</a>
+      
+      <h1>Forms</h1>
+      <form action="https://www.google.com" method="GET">
+         <h2>Login</h2>
+         <h3>Please input your email and password</h3>
+         <label for="email">Email: </label>
+         <input type="email" id="email" name="user_email" placeholder="example@email.com">
+         
+         <label for="password">Password: </label>
+         <input type="password" id="password" name="user_password" placeholder="password">
+         
+         <input type="submit" name="" value="Submit">
+      </form>
+      
+      <h1>Forms Selection</h1>
+      <form method="get">
+         <h3>Do you already own a dog?</h3>
+         
+         <input type="radio" id="yes" name="dog_choice" value="Yes">
+         <label for="yes">Yes</label>
+         
+         <input type="radio" id="no" name="dog_choice" value="No">
+         <label for="no">No</label>
+         <br>
+         <label for="stars">How clean is your house? (1-3)</label>
+         <select name="stars" id="stars">
+            <option value="Great">3</option>
+            <option value="Good">2</option>
+            <option value="Bad">1</option>
+         </select>
+         
+         <br>
+         
+         <label for="comments">Any other comments:</label> <br>
+         <textarea name="feedback" id="comments" rows="8" cols="80"></textarea>
+   
+         <input type="submit" value="Submit Feedback">
+      </form>
+   </body>
+</html>
+<!--
+    head component contains the metadata: link to CSS and JS
+    HTML has tags and elements that are going to be the definition of everything
+    untagged elements will not be effected by whitespace
+    <p> tags are block tags
+    inline tags
+    strong = bold
+    em = italics
+
+    HTML Lists
+        UL unordered list = bullet points
+        OL ordered list = numbered list
+
+    DIV = division
+    Span
+
+    Attributes
+        img is a self-closing tag only needs <img>
+     
+    Forms
+      can add headers and labels
+      comes with different attributes: action, class, method
+      input: name=identifier of the value and value= actual value is passed back
+      input type color: color selector
+      submission: GET and POST method
+      GET: requests a representation of the specified resource
+         GET will send back the information to our action URL
+      POST: submit the data to be processed
+      Inputs should be connected to a label tag
+         connected with label for="name of input id"
+         id="id_name"
+         label for="id_name"
+      form action="" this is where the page will redirect upon submission
+      
+      Radio buttons are single selection only if they share the same name attribute
+-->

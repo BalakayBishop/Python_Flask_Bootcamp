@@ -1,0 +1,19 @@
+.navbar {
+    border-radius: 8px;
+}
+
+.nav-link {
+    color: #eeeeee!important;
+}
+
+.lead {
+    color: #212529;
+}
+
+.carousel {
+    margin: 16px;
+}
+
+.carousel > img {
+    border-radius: 8px;
+}
