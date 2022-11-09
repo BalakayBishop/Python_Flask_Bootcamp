@@ -1,0 +1,24 @@
+{% extends "base_practice.html" %}
+
+{% block content %}
+
+	<div class="jumbotron">
+		{% if report_all %}
+			<h1 class="display-4">Your username met the requirements!</h1>
+		{% else %}
+			<p class="lead">Your username must: </p>
+			<ul class="list-group">
+				{% if uppercase == False %}
+					<li class="list-group-item">Contain an uppercase letter</li>
+				{% endif %}
+				{% if lowercase == False %}
+					<li class="list-group-item">Contain a lowercase letter</li>
+				{% endif %}
+				{% if number == False %}
+					<li class="list-group-item">End in a number</li>
+				{% endif %}
+			</ul>
+		{% endif %}
+	</div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{%  extends "base2.html" %}
+
+{% block content %}
+
+	<div class="jumbotron">
+		<h1 class="display-4">Hello, there!</h1>
+		<p class="lead">Welcome to Puppy Rock!</p>
+		<hr class="my-4">
+
+		<p>Would you like to sign up for our puppy band?</p>
+
+		<p class="lead">
+			<a class="btn btn-primary btn-lg" href="{{ url_for('signup_form') }}" role="button">Sign up here!</a>
+		</p>
+	</div>
+
+{% endblock %}

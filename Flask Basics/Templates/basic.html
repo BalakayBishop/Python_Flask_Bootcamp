@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Basic Templates</title>
+</head>
+<body>
+   <h1>Welcome to the site, {{ name }}!</h1>  <!--we are receiving my_var from the python/flask script-->
+   <h1>{{ letters }}</h1> <!-- we can index off of this injection -->
+   <h1>{{ pup_dict }}</h1>
+   <h1>OR</h1>
+   <h1>{{ pup_dict['pup_name'] }}</h1>
+   <h2>Here is a puppy pic!</h2>
+   <img src="../static/puppy_pic.jpg" alt="">
+</body>
+</html>
+
+<!--
+   <ul>
+      {% for item in mylist %}
+      <li> {{ item }} </li>
+      {% endfor %}
+   </ul>

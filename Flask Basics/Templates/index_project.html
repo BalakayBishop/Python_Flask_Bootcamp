@@ -1,0 +1,29 @@
+{% extends "base_practice.html" %}
+
+{% block content %}
+
+	<div class="jumbotron">
+		<h1 class="display-4">Hello, there!</h1>
+		<p class="lead">Please enter your username</p>
+		<hr class="my-4">
+
+		<p class="lead">Your username must: </p>
+
+		<ul class="list-group">
+		  <li class="list-group-item">Contain a lowercase letter</li>
+		  <li class="list-group-item">Contain an uppercase letter</li>
+		  <li class="list-group-item">End in a number</li>
+		</ul>
+
+		<br>
+
+		<form class="form-inline" action="{{ url_for('report') }}">
+			<label class="sr-only" for="inlineFormInputName2">Username</label>
+			<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" name="username"
+			       placeholder="JohnDoe2">
+			<button type="submit" class="btn btn-primary mb-2" value="Submit">Submit</button>
+		</form>
+
+	</div>
+
+{% endblock %}
