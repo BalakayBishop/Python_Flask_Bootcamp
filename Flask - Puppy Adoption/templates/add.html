@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Have a puppy that needs to be adopted?</h1>
+			<p class="lead">Add a new puppy!</p>
+			<form method="post">
+				{{ form.hidden_tag() }}
+				{{ form.name.label }} {{ form.name() }}
+				{{ form.submit() }}
+			</form>
+		</div>
+	</div>
+{% endblock %}
