@@ -1,0 +1,11 @@
+.jumbotron {
+    margin: 16px!important;
+}
+
+input#inlineFormInputName2 {
+    width: 500px;
+}
+
+li.list-group-item {
+    width: 500px;
+}
