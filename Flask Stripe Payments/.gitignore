@@ -1,0 +1,2 @@
+# ignore my .env file so it doesn't post to code base
+*.env
