@@ -1,3 +1,4 @@
+# core/views.py
 from flask import render_template, request, Blueprint
 from company_blog.models import BlogPost
 

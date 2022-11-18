@@ -1,3 +1,4 @@
+# blog_posts/views.py
 from flask import render_template, url_for, request, redirect, Blueprint, abort
 from flask_login import current_user, login_required
 from company_blog import db

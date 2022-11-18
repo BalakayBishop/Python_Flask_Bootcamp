@@ -1,3 +1,4 @@
+# users/picture_handler.py
 import os
 from PIL import Image
 from flask import current_app
