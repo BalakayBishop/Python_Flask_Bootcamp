@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}
+	Account
+{% endblock %}
+
+{% block content %}
+	<div class="mt-4 p-5 bg-secondary text-white rounded">
+		<div align="center">
+			<h1>Welcome to the page for {{ current_user.username }}</h1>
+			<img align="center" src="{{ url_for('static', filename='profile_pics/'+current_user.profile_img) }}"
+			     alt="profile picture">
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		<form method="POST" action="" enctype="multipart/form-data"> <!--had to add the enctype for more complex file
+		 types to upload-->
+				{{ form.hidden_tag() }}
+			<div class="mb-3">
+				{{ form.username.label(class="form-label") }} {{ form.username(class="form-control") }}
+			</div>
+
+			<div class="mb-3">
+				{{ form.email.label(class="form-label") }} {{ form.email(class="form-control") }}
+			</div>
+
+			<div class="mb-3">
+				{{ form.picture.label(class="form-label") }} {{ form.picture(class="form-control") }}
+			</div>
+
+			{{ form.submit(class="btn btn-primary") }}
+		</form>
+	</div>
+{% endblock %}
