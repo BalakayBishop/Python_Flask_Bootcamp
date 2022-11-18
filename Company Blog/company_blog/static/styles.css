@@ -1,0 +1,19 @@
+html, body {
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+nav.navbar {
+    margin: 16px!important;
+    border-radius: 8px!important;
+}
+
+.container {
+    border-radius: 8px;
+    padding: 0;
+}
+
+.card {
+    margin: 8px 0;
+}
